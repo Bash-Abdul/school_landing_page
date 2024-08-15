@@ -62,10 +62,10 @@ function Module(props) {
               <h3 className={`${module_color} font-semibold text-sm mb-4`}>
                 MODULES
               </h3>
-              <h2 className="text-gray-900 text-2xl md:text-3xl font-bold mb-6">
+              <h2 className="text-figmaBlack text-2xl md:text-3xl font-bold mb-6">
                 {props.module_title}
               </h2>
-              <p className="text-gray-600 mb-6">{props.module_description}</p>
+              <p className="text-figmaBlack mb-6">{props.module_description}</p>
 
               {/* Feature List */}
               <ul className="space-y-8 px-4">
@@ -74,32 +74,32 @@ function Module(props) {
                     1
                   </span>
                   <div>
-                    <h4 className="text-gray-900 font-semibold">
+                    <h4 className="text-figmaBlack font-semibold">
                       {props.one_title}
                     </h4>
-                    <p className="text-gray-600">{props.one_description}</p>
+                    <p className="text-figmaGrey2">{props.one_description}</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gray-400 font-bold text-2xl mr-4">
+                  <span className="text-figmaGrey font-bold text-2xl mr-4">
                     2
                   </span>
                   <div>
-                    <h4 className="text-gray-900 font-semibold">
+                    <h4 className="text-figmaBlack font-semibold">
                       {props.two_title}
                     </h4>
-                    <p className="text-gray-600">{props.two_description}</p>
+                    <p className="text-figmaGrey2">{props.two_description}</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gray-400 font-bold text-2xl mr-4">
+                  <span className="text-figmaGrey font-bold text-2xl mr-4">
                     3
                   </span>
                   <div>
-                    <h4 className="text-gray-900 font-semibold">
+                    <h4 className="text-figmaBlack font-semibold">
                       {props.three_title}
                     </h4>
-                    <p className="text-gray-600">{props.three_description}</p>
+                    <p className="text-figmaGrey2">{props.three_description}</p>
                   </div>
                 </li>
               </ul>

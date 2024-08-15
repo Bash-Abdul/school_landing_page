@@ -11,6 +11,7 @@ export default {
         'figmaBlue': '#2F5582',
         'figmaGrey': '#E3E3E3',
         'figmaBlack': '#2E2E2E',
+        'figmaGrey2': '#616161',
         'colorBg':'#D9D9D9'
       },
       fontFamily: {
