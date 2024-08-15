@@ -1,15 +1,13 @@
-import home_image from '../assets/home_image.png'
+import home_image from "../assets/home_image.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function Hero() {
   return (
-    <div className="w-full bg-colorBg h-[60vh] md:h-[80vh]">
-      {/* <div className="h-[90vh] w-full max-w-[80%] mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-1/2">
-          <img src={home_image} alt="" className="w-full" />
-        </div>
-
-        <div className="w-1/2 text-center md:text-start">
-          <h3 className="text-2xl md:text-4xl font-semibold mb-4 leading-snug">
+    <div className="w-full bg-colorBg min-h-[80vh] md:pt-[5rem]  ">
+      <div className="h-full w-full max-w-[80%] mx-auto flex flex-col md:flex-row items-center py-14 gap-5">
+        <div className="flex-grow flex-shrink basis-[60%] w-full text-center md:text-start flex items-center md:items-start flex-col">
+          <h3 className="max-w-[80%] text-2xl md:text-4xl font-semibold mb-4 leading-snug">
             Streamline your Institutions Education Process with our{" "}
             <span className="text-figmaBlue">School Management Software</span>
           </h3>
@@ -17,11 +15,15 @@ function Hero() {
             Explore a world of seamless management of school activities which
             makes all processing easy.
           </p>
-          <button className="bg-figmaBlue text-white px-4 py-2 text-center duration-300 rounded">
-            Learn More
+          <button className="bg-figmaBlue text-white px-4 py-2 text-center duration-300 rounded w-[40%] md:w-[30%] flex items-center justify-center gap-3">
+            Learn More <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
-      </div> */}
+
+        <div className="flex-grow flex-shrink basis-[40%]">
+          <img src={home_image} alt="" className="w-full" />
+        </div>
+      </div>
     </div>
   );
 }

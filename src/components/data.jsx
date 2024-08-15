@@ -18,7 +18,8 @@ export default [
         four_description: "The Principal has the ability to send notices to parents via their portal and can also send messages to them.",
         button_text: "Principal’s Login",
         module_image: tv,
-        module_theme: "bg-figmaBlue"
+        module_theme: "bg-figmaBlue",
+        style: "bottom"
     },
     {
         id:2,
@@ -32,7 +33,8 @@ export default [
         three_description: "The admin and principal have access to students results and school reports for past and present academic sessions.",
         button_text: "Secretary’s Login",
         module_image: home_image,
-        module_theme: "bg-figmaGreen"
+        module_theme: "bg-figmaGreen",
+        style: "right"
     },
     {
         id:3,
@@ -46,7 +48,8 @@ export default [
         three_description: "The result processing starts from the teacher recording each students tests and exam scores.",
         button_text: "Teacher’s Login   ",
         module_image: pc,
-        module_theme: "bg-figmaBlue"
+        module_theme: "bg-figmaBlue",
+        style: "left"
     },
     {
         id: 4,
@@ -60,7 +63,8 @@ export default [
         three_description: "The Secretary is provided with a summary of payments made or yet to be made, making it easy for decision making.",
         button_text: "Parent’s Login   ",
         module_image: home_image,
-        module_theme: "bg-figmaGreen"
+        module_theme: "bg-figmaGreen",
+        style: "right"
     },
 
 

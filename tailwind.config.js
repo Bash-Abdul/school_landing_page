@@ -12,7 +12,10 @@ export default {
         'figmaGrey': '#E3E3E3',
         'figmaBlack': '#2E2E2E',
         'colorBg':'#D9D9D9'
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
