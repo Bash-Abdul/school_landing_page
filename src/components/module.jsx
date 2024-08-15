@@ -1,37 +1,45 @@
 function Module(props) {
   // Initialize variables
-  let style = "";
-  let style_mobile = "flex-col";
+  let style_2 = ''
   let module_color = "";
   let module_bg = "";
   let image_position = "";
 
   // Determine styles based on the module theme
-  if (props.module_theme === "bg-figmaBlue") {
-    style = "flex-row";
-    style_mobile = "flex-col";
-    module_color = "text-figmaGreen";
-    module_bg = "bg-figmaGreen";
-  } else if (props.module_theme === "bg-figmaGreen") {
-    style = "flex-row-reverse";
-    style_mobile = "flex-col-reverse";
-    module_color = "text-figmaBlue";
-    module_bg = "bg-figmaBlue";
+  switch (props.module_theme) {
+    case "bg-figmaBlue":
+      style_2 = 'flex md:flex-row flex-col flex-wrap min-h-[100vh]'
+      module_color = "text-figmaGreen";
+      module_bg = "bg-figmaGreen";
+      break;
+    case "bg-figmaGreen":
+      style_2 = 'flex md:flex-row-reverse flex-col-reverse flex-wrap min-h-[100vh]'
+      module_color = "text-figmaBlue";
+      module_bg = "bg-figmaBlue";
+      break;
+    default:
+      break;
   }
 
   // Determine image position based on props.style
-  if (props.style === "bottom") {
-    image_position = "md:absolute md:bottom-0 md:right-[-28%]";
-  } else if (props.style === "left") {
-    image_position = "md:absolute md:top-[45%] md:right-[-28%]";
-  } else if (props.style === "right") {
-    image_position = "md:absolute md:top-[45%] md:left-[-28%]";
+  switch (props.style) {
+    case "bottom":
+      image_position = "md:absolute md:bottom-0 md:right-[-20%]";
+      break;
+    case "left":
+      image_position = "md:absolute md:top-[45%] md:right-[-28%]";
+      break;
+    case "right":
+      image_position = "md:absolute md:top-[45%] md:left-[-28%]";
+      break;
+    default:
+      break;
   }
 
   return (
     <div className="">
-      {style && (
-        <div className={`flex md:${style} ${style_mobile} flex-wrap min-h-[100vh]`}>
+      {style_2 && (
+        <div className={`${style_2}`}>
           {/* Left Side with Background */}
           <div
             className={`${props.module_theme} flex-grow flex-shrink basis-[30%] w-full h-[30vh] py-6 md:h-[100vh] flex items-center justify-center relative`}
@@ -113,3 +121,4 @@ function Module(props) {
 }
 
 export default Module;
+

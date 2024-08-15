@@ -19,6 +19,7 @@ export default [
         button_text: "Principal’s Login",
         module_image: tv,
         module_theme: "bg-figmaBlue",
+        "sides": "left",
         style: "bottom"
     },
     {
@@ -34,6 +35,7 @@ export default [
         button_text: "Secretary’s Login",
         module_image: home_image,
         module_theme: "bg-figmaGreen",
+        "sides": "right",
         style: "right"
     },
     {
@@ -49,6 +51,7 @@ export default [
         button_text: "Teacher’s Login   ",
         module_image: pc,
         module_theme: "bg-figmaBlue",
+        "sides": "left",
         style: "left"
     },
     {
@@ -64,6 +67,7 @@ export default [
         button_text: "Parent’s Login   ",
         module_image: home_image,
         module_theme: "bg-figmaGreen",
+        "sides": "right",
         style: "right"
     },
 
